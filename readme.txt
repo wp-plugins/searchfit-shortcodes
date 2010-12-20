@@ -1,5 +1,5 @@
 === SearchFit WP plugin ===
-Contributors: stan, mladen
+Contributors: searchfit, mladen
 Tags: searchfit, ecommerse, shopping cart, online shopping cart software, shopping cart program, shopping cart software, ecommerce business solution, ecommerce shopping cart software, ecommerce software, ecommerce solution, ecommerce web site
 Requires at least: 3.0
 Tested up to: 3.0
@@ -15,6 +15,16 @@ SearchFit is the ultimate online shopping cart solution. Driven by visionary thi
 This plugin allows you to use shortcodes to visualize products from your SearchFit store to your WordPress blog.
 
 == Installation ==
+
+Automatic (recommended):
+
+1. Login to your WordPress
+2. Go to Plugins/AddNew and search for searchfit
+3. Clcik on the 'Install Now' link for the 'SearchFit WP plugin'
+4. Go to Plugins/Plugins and click on the SearchFit 'Activate' link
+5. Go to Plugins/SearchfitSettings, configure the plugin, and read how to use the available SearchFit Shortcodes
+
+Manual:
 
 1. Upload the zip file into your blog's plugins directory (typically `/wp-content/plugins/`)
 2. Unzip the zip file
