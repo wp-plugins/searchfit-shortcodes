@@ -29,8 +29,8 @@ Manual:
 1. Upload the zip file into your blog's plugins directory (typically `/wp-content/plugins/`)
 2. Unzip the zip file
 3. Activate the plugin through the 'Plugins' menu in WordPress
-4. Configure plugin trough the 'Settings' link.
-5. Refer to the plugin 'Settings' page for information about the available shortcodes and examples.
+4. Configure plugin through the 'Settings' link
+5. Refer to the plugin 'Settings' page for information about the available shortcodes and examples
 
 == Changelog ==
 
