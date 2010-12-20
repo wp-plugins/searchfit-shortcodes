@@ -1,0 +1,6 @@
+.sf_config_header { border-bottom: 1px solid #CCCCCC; }
+.sf_config_body { border-bottom: 1px solid #CCCCCC; }
+.sf_help { font-size:10px; color:green; }
+.sf_warn { color:red; }
+.sf_shortcodes_container { margin:10px; }
+.sf_shortcode_title { padding:10px; border: 1px solid #CCCCCC; background-color: #FFFFFF; }
