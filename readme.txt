@@ -16,7 +16,7 @@ The SearchFit WordPress plugin gives the ability to use shortcodes to visualize 
 
 == Installation ==
 
-Automatic (recommended):
+Automatic (Recommended):
 
 1. Login to your WordPress
 2. Go to Plugins/AddNew and search for searchfit
