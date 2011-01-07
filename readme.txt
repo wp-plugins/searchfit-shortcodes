@@ -6,13 +6,13 @@ Tested up to: 3.0
 Stable tag: 1.0.0
 License: GPLv2
 
-This plugin allows you to use shortcodes to visualize products from your SearchFit store to your WordPress blog.
+The SearchFit WordPress plugin gives the ability to use shortcodes to visualize products on the WordPress pages directly from the SearchFit store.
 
 == Description ==
 
-SearchFit is the ultimate online shopping cart solution. Driven by visionary thinking, the ecommerce platform combines two key components for online business success. SearchFit builds user-friendly and search engine friendly websites. 
+SearchFit is the ultimate online shopping cart solution. Driven by visionary thinking, the ecommerce platform combines two key components for online business success. SearchFit builds user-friendly and search engine friendly websites.
 
-This plugin allows you to use shortcodes to visualize products from your SearchFit store to your WordPress blog.
+The SearchFit WordPress plugin gives the ability to use shortcodes to visualize products on the WordPress pages directly from the SearchFit store.
 
 == Installation ==
 
@@ -22,18 +22,19 @@ Automatic (recommended):
 2. Go to Plugins/AddNew and search for searchfit
 3. Clcik on the 'Install Now' link for the 'SearchFit WP plugin'
 4. Go to Plugins/Plugins and click on the SearchFit 'Activate' link
-5. Go to Plugins/SearchfitSettings, configure the plugin, and read how to use the available SearchFit Shortcodes
+5. Go to Plugins/SearchFitSettings, configure the plugin, and read how to use the available shortcodes
 
 Manual:
 
-1. Upload the zip file into your blog's plugins directory (typically `/wp-content/plugins/`)
-2. Unzip the zip file
-3. Activate the plugin through the 'Plugins' menu in WordPress
-4. Configure plugin through the 'Settings' link
-5. Refer to the plugin 'Settings' page for information about the available shortcodes and examples
+1. Download the plugin
+2. Upload the zip file into your blog's plugins directory (typically `/wp-content/plugins/`)
+3. Unzip the zip file
+4. Login to your WordPress and activate the plugin through the 'Plugins' menu
+5. Configure the plugin through the 'Settings' link
+6. Refer to the plugin 'Settings' page for information about the available shortcodes and examples
 
 == Changelog ==
 
 = 1.0.0 =
 
-* Initial release.
+* Initial release compatible with SearchFit v8.17 and above.
