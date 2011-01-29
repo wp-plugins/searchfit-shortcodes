@@ -73,7 +73,7 @@ function sf_show_settings() {
                     <table width="100%" border="0" cellpadding="0" cellspacing="15">
                     <tr><td><b>Public Service Endpoint</b> <span class="sf_help">(Available at <?php echo SF_PLUGIN_NAME; ?> Settings/ConfigurePerUser/WebServices)</span><br /><input type="text" name="sf_webservice_public_url" id="sf_webservice_public_url" value="<?php echo get_option('sf_webservice_public_url'); ?>" size="100" /></td></tr>
                     <tr><td><b>WebSite Service Endpoint</b> <span class="sf_help">(Available at <?php echo SF_PLUGIN_NAME; ?> Settings/ConfigurePerUser/WebServices)</span><br /><input type="text" name="sf_webservice_website_url" id="sf_webservice_website_url" value="<?php echo get_option('sf_webservice_website_url'); ?>" size="100" /></td></tr>
-                    <tr><td><b>Include External Artifacts</b> <span class="sf_help">(Ability to disable <?php echo SF_PLUGIN_NAME; ?> artifacts)</span><br /><select name="sf_include_external_artifacts" id="sf_include_external_artifacts"><?php echo $utilOptions->getSelectOptions($includeExternalArtifactsEnum, get_option('sf_include_external_artifacts')); ?></select></td></tr>
+                    <tr><td><b>Include External Artifacts</b> <span class="sf_help">(Ability to exclude <?php echo SF_PLUGIN_NAME; ?> artifacts from the visualized products content)</span><br /><select name="sf_include_external_artifacts" id="sf_include_external_artifacts"><?php echo $utilOptions->getSelectOptions($includeExternalArtifactsEnum, get_option('sf_include_external_artifacts')); ?></select></td></tr>
                     <tr><td><input type="submit" value="<?php _e('Save Changes') ?>" /></td></tr>
                     </table>
                 </form>
