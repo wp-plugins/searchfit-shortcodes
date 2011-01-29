@@ -58,18 +58,22 @@ function sf_admin_warnings() {
     }
 }
 
-function sf_show_settings() { ?>
+function sf_show_settings() {
+    include_once(SF_PLUGIN_DIR.'/enums/includeExternalArtifactsEnum.php');
+    include_once(SF_PLUGIN_DIR.'/utils/class-util-options.php'); ?>
+
     <div class="sf_settingsContainer">
         <div class="sf_config_header"><h2><?php echo SF_PLUGIN_NAME; ?> Plugin v<?php echo SF_PLUGIN_VERSION; ?></h2></div>
         <div class="sf_config_body">
             <?php if (function_exists('add_shortcode')) { ?>
                 <form method="post" action="options.php">
                     <input type="hidden" name="action" value="update" />
-                    <input type="hidden" name="page_options" value="sf_webservice_public_url, sf_webservice_website_url" />
+                    <input type="hidden" name="page_options" value="sf_webservice_public_url, sf_webservice_website_url, sf_include_external_artifacts" />
                     <?php wp_nonce_field('update-options'); ?>
                     <table width="100%" border="0" cellpadding="0" cellspacing="15">
-                    <tr><td><b>Public Service Endpoint</b> <span class="sf_help">(Available at <?php echo SF_PLUGIN_NAME; ?> Settings/ConfigurePerUser/WebServices)</span><br /><input size="100" name="sf_webservice_public_url" type="text" id="sf_webservice_public_url" value="<?php echo get_option('sf_webservice_public_url'); ?>" /></td></tr>
-                    <tr><td><b>WebSite Service Endpoint</b> <span class="sf_help">(Available at <?php echo SF_PLUGIN_NAME; ?> Settings/ConfigurePerUser/WebServices)</span><br /><input size="100" name="sf_webservice_website_url" type="text" id="sf_webservice_website_url" value="<?php echo get_option('sf_webservice_website_url'); ?>" /></td></tr>
+                    <tr><td><b>Public Service Endpoint</b> <span class="sf_help">(Available at <?php echo SF_PLUGIN_NAME; ?> Settings/ConfigurePerUser/WebServices)</span><br /><input type="text" name="sf_webservice_public_url" id="sf_webservice_public_url" value="<?php echo get_option('sf_webservice_public_url'); ?>" size="100" /></td></tr>
+                    <tr><td><b>WebSite Service Endpoint</b> <span class="sf_help">(Available at <?php echo SF_PLUGIN_NAME; ?> Settings/ConfigurePerUser/WebServices)</span><br /><input type="text" name="sf_webservice_website_url" id="sf_webservice_website_url" value="<?php echo get_option('sf_webservice_website_url'); ?>" size="100" /></td></tr>
+                    <tr><td><b>Include External Artifacts</b> <span class="sf_help">(Ability to disable <?php echo SF_PLUGIN_NAME; ?> artifacts)</span><br /><select name="sf_include_external_artifacts" id="sf_include_external_artifacts"><?php echo $utilOptions->getSelectOptions($includeExternalArtifactsEnum, get_option('sf_include_external_artifacts')); ?></select></td></tr>
                     <tr><td><input type="submit" value="<?php _e('Save Changes') ?>" /></td></tr>
                     </table>
                 </form>

@@ -6,7 +6,7 @@
 Plugin Name: SearchFit
 Plugin URI: http://www.searchfit.com
 Description: SearchFit is the ultimate online shopping cart solution. Driven by visionary thinking, the ecommerce platform combines two key components for online business success. SearchFit builds user-friendly and search engine friendly websites. The result is more targeted traffic driven to a website that converts visitors into customers. See also: <a href="http://www.searchfit.com/why-choose-searchfit-shopping-cart-software.htm" target="_blank">SearchFit</a>.
-Version: 1.0.0
+Version: 1.1.0
 Author: SearchFit
 Author URI: http://www.searchfit.com
 */
@@ -27,9 +27,9 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-// searchfit-1.0.0.zip (Dec 15, 2010)
-define('SF_PLUGIN_NAME', 'SearchFit'); // this should match the Plugin Name
-define('SF_PLUGIN_VERSION', '1.0.0');
+define('SF_PLUGIN_URL', plugin_dir_url(__FILE__));
+define('SF_PLUGIN_DIR', dirname(__FILE__));
+include_once(SF_PLUGIN_DIR.'/searchfit-constants.php');
 
 // Make sure we don't expose any info if called directly
 if ( ! function_exists( 'add_action' ) ) {
@@ -37,10 +37,6 @@ if ( ! function_exists( 'add_action' ) ) {
 	exit;
 }
 
-define('SF_PLUGIN_URL', plugin_dir_url(__FILE__));
-define('SF_PLUGIN_DIR', dirname(__FILE__));
-define('SF_SHORTCODE', 'searchfit');
- 
 // Runs when plugin is activated
 register_activation_hook(__FILE__, 'sf_install');
 // Runs on plugin deactivation

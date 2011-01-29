@@ -21,6 +21,19 @@ class getGroupOfProductsAsHtml extends baseActionHandler {
         // validate shortcode attributes
         if (empty($atts['group_id'])) { return SF_PLUGIN_NAME.': Missing the group_id attribute.'; }
 
+        // construct the containerType web service parameter
+        include_once(SF_PLUGIN_DIR.'/enums/includeExternalArtifactsEnum.php');
+        $includeExternalArtifacts = get_option('sf_include_external_artifacts');
+        if ($includeExternalArtifacts == $includeExternalArtifactsEnum['none']['key']) {
+            $containerType = 5; // CONTAINERTYPE_PRODUCTS_EXTERNAL_NOCSSJS
+        } else if ($includeExternalArtifacts == $includeExternalArtifactsEnum['noCSS']['key']) {
+            $containerType = 6; // CONTAINERTYPE_PRODUCTS_EXTERNAL_NOCSS
+        } else if ($includeExternalArtifacts == $includeExternalArtifactsEnum['noJS']['key']) {
+            $containerType = 7; // CONTAINERTYPE_PRODUCTS_EXTERNAL_NOJS
+        } else {
+            $containerType = 4; // CONTAINERTYPE_PRODUCTS_EXTERNAL
+        }
+
         // get shortcode attributes
         $groupId = (int)$atts['group_id'];
         $maxItems = (int)$atts['max_items'];
@@ -31,7 +44,7 @@ class getGroupOfProductsAsHtml extends baseActionHandler {
 
         // prepare the full service endpoint
         $webServiceUrl = get_option('sf_webservice_website_url');
-        $url = $webServiceUrl.'&action='.$atts['action'].'&consumerCode=WordPress&productGroupId='.$groupId;
+        $url = $webServiceUrl.'&action='.$atts['action'].'&consumerCode=WordPress&containerType='.$containerType.'&productGroupId='.$groupId;
         $url .= ! empty($maxDaysInPast) ? '&maxDaysInPast='.$maxDaysInPast : '';
         $url .= ! empty($maxItems) ? '&maxItems='.$maxItems : '';
         $url .= ! empty($manufacturerId) ? '&manufacturerId='.$manufacturerId : '';

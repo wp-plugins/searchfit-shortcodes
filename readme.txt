@@ -2,8 +2,8 @@
 Contributors: searchfit, mladen
 Tags: searchfit, ecommerse, shopping cart, online shopping cart software, shopping cart program, shopping cart software, ecommerce business solution, ecommerce shopping cart software, ecommerce software, ecommerce solution, ecommerce web site
 Requires at least: 3.0
-Tested up to: 3.0
-Stable tag: 1.0.0
+Tested up to: 3.0.4
+Stable tag: 1.1.0
 License: GPLv2
 
 The SearchFit WordPress plugin gives the ability to use shortcodes to visualize products on the WordPress pages directly from the SearchFit store.
@@ -35,6 +35,10 @@ Manual:
 
 == Changelog ==
 
+= 1.1.0 =
+
+* Ability to exclude SearchFit artifacts (like CSS and JavaScript) from the visualized products content. Requires SearchFit v8.18 or above.
+
 = 1.0.0 =
 
-* Initial release compatible with SearchFit v8.17 and above.
+* Initial release compatible with SearchFit v8.17 or above.
