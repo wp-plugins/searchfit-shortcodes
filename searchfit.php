@@ -6,7 +6,7 @@
 Plugin Name: SearchFit
 Plugin URI: http://www.searchfit.com
 Description: SearchFit is the ultimate online shopping cart solution. Driven by visionary thinking, the ecommerce platform combines two key components for online business success. SearchFit builds user-friendly and search engine friendly websites. The result is more targeted traffic driven to a website that converts visitors into customers. See also: <a href="http://www.searchfit.com/why-choose-searchfit-shopping-cart-software.htm" target="_blank">SearchFit</a>.
-Version: 1.1.0
+Version: 1.1.1
 Author: SearchFit
 Author URI: http://www.searchfit.com
 */

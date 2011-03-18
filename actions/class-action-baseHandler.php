@@ -18,7 +18,7 @@ abstract class baseActionHandler {
 
     static public function &getActionHandler($actionName) {
         $classFileName = SF_PLUGIN_DIR.'/actions/class-action-'.$actionName.'.php';
-        if (file_exists($classFileName)) { include($classFileName); } else { return null; }
+        if (file_exists($classFileName)) { include_once($classFileName); } else { return null; }
         return new $actionName;
     }
 

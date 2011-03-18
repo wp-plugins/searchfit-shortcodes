@@ -2,8 +2,8 @@
 Contributors: searchfit, mladen
 Tags: searchfit, ecommerse, shopping cart, online shopping cart software, shopping cart program, shopping cart software, ecommerce business solution, ecommerce shopping cart software, ecommerce software, ecommerce solution, ecommerce web site
 Requires at least: 3.0
-Tested up to: 3.0.4
-Stable tag: 1.1.0
+Tested up to: 3.1
+Stable tag: 1.1.1
 License: GPLv2
 
 The SearchFit WordPress plugin gives the ability to use shortcodes to visualize products on the WordPress pages directly from the SearchFit store.
@@ -34,6 +34,10 @@ Manual:
 6. Refer to the plugin 'Settings' page for information about the available shortcodes and examples
 
 == Changelog ==
+
+= 1.1.1 =
+
+* Fixed "Error class getGroupOfProductsAsHtml is already declared" when using many shortcodes in one post.
 
 = 1.1.0 =
 
