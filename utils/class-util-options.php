@@ -1,6 +1,6 @@
 <?
 /**
- * Copyright (c) 2003-2011, SearchFit, Inc. All Rights Reserved.
+ * Copyright (c) 2003-2014, SearchFit, Inc. All Rights Reserved.
  * -------------------------------------------------------------
  * Permission to use, copy, modify, and distribute this
  * software for any purpose without permission is forbidden!

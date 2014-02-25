@@ -15,9 +15,9 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-// searchfit-1.1.1.zip (Mar 21, 2011)
+// searchfit-1.1.1.zip (Mar 21, 2014)
 define('SF_PLUGIN_NAME', 'SearchFit'); // this should match the Plugin Name
-define('SF_PLUGIN_VERSION', '1.1.1');
+define('SF_PLUGIN_VERSION', '1.1.2');
 define('SF_SHORTCODE', 'searchfit');
 
 ?>

@@ -78,7 +78,7 @@ function sf_show_settings() {
                     </table>
                 </form>
             <?php } else { ?>
-                <div class="sf_warn"><h3>Warning! This plugin requires WordPress 2.5+</h3></div>
+                <div class="sf_warn"><h3>Warning! This plugin requires WordPress 3.0+</h3></div>
             <?php } ?>
         </div>
         <div class="sf_config_footer">
@@ -87,11 +87,11 @@ function sf_show_settings() {
                 <div class="sf_shortcode_title">[searchfit action=<b>getGroupOfProductsAsHtml</b>]</div>
                 <div class="sf_shortcode_content">
                     <p>The <b>getGroupOfProductsAsHtml</b> action retrieves the products of the target product group and visualizes them as HTML.</p>
-                    <p><pre>Required Attributes:</pre></p>
+                    <p>Required Attributes:</p>
                     <ol>
                         <li><i>group_id</i> - The target product group id.</li>
                     </ol>
-                    <p><pre>Optional Attributes:</pre></p>
+                    <p>Optional Attributes:</p>
                     <ol>
                         <li><i>max_items</i> - The maximum number of visualized products.</li>
                         <li><i>max_days_in_past</i> - The maximum number of days in the past that intelligent product groups will use to retrieve products.</li>
@@ -99,7 +99,7 @@ function sf_show_settings() {
                         <li><i>category_type_id</i> - The category type id of the products to be retrieved.</li>
                         <li><i>category_id</i> - The category id of the products to be retrieved.</li>
                     </ol>
-                    <p><pre>Examples:</pre></p>
+                    <p>Examples:</p>
                     <ul>
                         <li><code>[searchfit action=getGroupOfProductsAsHtml group_id=123]</code></li>
                         <li><code>[searchfit action=getGroupOfProductsAsHtml group_id=123 max_items=10]</code></li>
