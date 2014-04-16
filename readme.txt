@@ -2,7 +2,7 @@
 Contributors: searchfit, mladen
 Tags: searchfit, ecommerse, shopping cart, online shopping cart software, shopping cart program, shopping cart software, ecommerce business solution, ecommerce shopping cart software, ecommerce software, ecommerce solution, ecommerce web site
 Requires at least: 3.0
-Tested up to: 3.1
+Tested up to: 3.9
 Stable tag: 1.1.1
 License: GPLv2
 
